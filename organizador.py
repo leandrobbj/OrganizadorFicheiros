@@ -11,6 +11,7 @@ for ficheiro in pasta.iterdir():
         count += 1
         print("Nome:", ficheiro.name)
         print("Extensão:", ficheiro.suffix)
+        print("Tamanho:", ficheiro.stat().st_size, "bytes")
         print("-----------------------")
 
 if count == 0:
